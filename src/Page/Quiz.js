@@ -115,14 +115,14 @@ const Quiz = () => {
           ))}
         <div
           className={
-            " flex flex-col font-mono  items-center   h-3/5  w-full " +
+            " flex flex-col font-mono  items-center   h-3/5  w-full max-[720px]:h-4/5" +
             (showOption ? " justify-between" : " justify-center")
           }>
           <h1 className="text-3xl font-semibold max-w-[90%]">
             {Questions?.questions?.slice(questionNo - 1, 5)[0]?.question}
           </h1>
           {showOption && (
-            <div className="grid grid-cols-2  w-2/3 gap-2 text-white font-semibold text-xl">
+            <div className="grid grid-cols-2  w-2/3 gap-2 text-white font-semibold text-xl max-[720px]:grid-cols-1 ">
               {Questions?.questions
                 ?.slice(questionNo - 1, 5)[0]
                 ?.options?.map((elem, index) => {

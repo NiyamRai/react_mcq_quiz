@@ -11,7 +11,7 @@ const Welcome = () => {
   useEffect(() => {
     window.history.replaceState(currentState, "", "/");
     const interval = setInterval(() => {
-      if (countdown === 0) {
+      if (countdown <= 0) {
         setCountdown(0);
       } else setCountdown((countdown) => countdown - 1);
     }, 999);
