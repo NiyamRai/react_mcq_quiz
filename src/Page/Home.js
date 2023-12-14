@@ -52,7 +52,7 @@ const Home = () => {
         className="  expand flex flex-col h-3/4 gap-10 font-mono w-max
        ">
         <h1 className="text-5xl font-bold text-white text-center w-full">
-          Quizer
+          Quizzer
         </h1>
         <form
           className="bg-white items-center justify-center w-max p-6  rounded-md flex flex-col gap-3 "
