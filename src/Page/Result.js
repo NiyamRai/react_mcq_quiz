@@ -77,7 +77,7 @@ const Result = () => {
           </div>
 
           {/* Questions */}
-          <div className="flex flex-col  w-max gap-3 max-[900px]:text-[13px] max-[1200px]:text-sm max-[720px]:text-[12px]">
+          <div className="flex flex-col  w-max gap-3 max-[900px]:text-[13px] max-[1200px]:text-sm max-[720px]:text-[12px] max-[500px]:text-[10px]">
             <div
               className={
                 " py-2 px-4 border w-full " +
