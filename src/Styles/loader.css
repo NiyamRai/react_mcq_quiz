@@ -1,0 +1,60 @@
+@keyframes scaleBox {
+  from {
+    transform: scale(0.4, 0.4);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(2, 2);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleHeight {
+  from {
+    transform: scale(1, 0.4);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+@keyframes scaleWidth {
+  from {
+    transform: scale(0.5, 1);
+  }
+  to {
+    transform: scale(1, 1);
+  }
+}
+
+.popup {
+  animation-name: scaleBox;
+  animation-duration: 150ms;
+}
+.zoomOut {
+  animation-name: scaleOut;
+  animation-duration: 500ms;
+}
+
+.expand {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 150ms; */
+  animation-name: scaleHeight;
+  animation-duration: 150ms;
+}
+
+.expand-horizontal {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  /* transition-duration: 150ms; */
+  animation-name: scaleWidth;
+  animation-duration: 150ms;
+}
