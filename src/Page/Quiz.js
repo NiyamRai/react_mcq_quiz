@@ -7,6 +7,7 @@ import { FcHighPriority } from "react-icons/fc";
 const Quiz = () => {
   const navigate = useNavigate();
   const location = useLocation();
+  console.log(location);
   const { questionNo, userName } = useParams();
   const currentState = location.state;
   const [isEvaluate, setEvaluate] = useState(false);

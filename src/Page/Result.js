@@ -17,6 +17,10 @@ const Result = () => {
 
   useEffect(() => {
     // Disable navigating back in history
+    if (!location.state) {
+      alert("Navigating to home!");
+      navigate("/");
+    }
 
     const disableBack = (e) => {
       e.preventDefault();
@@ -40,7 +44,7 @@ const Result = () => {
   return (
     <div className="element">
       <div className="board relative">
-        <div className=" flex flex-col font-mono  items-center  justify-between h-4/5  w-max  ">
+        <div className=" flex flex-col font-mono  items-center  justify-between h-3/5  w-max  ">
           <Link
             to={"/"}
             className="underline text-blue-500 text-sm absolute bottom-[4%]">
@@ -73,7 +77,7 @@ const Result = () => {
           </div>
 
           {/* Questions */}
-          <div className="flex flex-col  w-max gap-3 min-w-max">
+          <div className="flex flex-col  w-max gap-3 max-[900px]:text-[13px] max-[1200px]:text-sm max-[720px]:text-[12px]">
             <div
               className={
                 " py-2 px-4 border w-full " +
